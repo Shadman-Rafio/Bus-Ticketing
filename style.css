@@ -1,50 +1,50 @@
 
 .tribe_check-mark {
-    height: 100px;
-    width: 100px;
-    text-align: center;
-    border: 2px solid rgb(59 177 165);
-    border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  border: 2px solid rgb(59 177 165);
+  border-radius: 50%;
+}
+
+.check-mark {
+  display: inline-block;
+  transform: rotate(45deg);
+  height: 86px;
+  width: 28px;
+  position: relative;
+  top: -16px;
+  left: 18px;
+  border-bottom: 3px solid rgb(59 177 165);
+  border-right: 3px solid rgb(59 177 165);
+}
+
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.toast-end {
+  animation: slide-in 0.5s ease-in-out, fade-out 0.5s 2.5s ease-in-out;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(100%);
   }
-  
-  .check-mark {
-    display: inline-block;
-    transform: rotate(45deg);
-    height: 86px;
-    width: 28px;
-    position: relative;
-    top: -16px;
-    left: 18px;
-    border-bottom: 3px solid rgb(59 177 165);
-    border-right: 3px solid rgb(59 177 165);
+  to {
+    transform: translateY(0);
   }
-  
-  .toast {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
   }
-  
-  .toast-end {
-    animation: slide-in 0.5s ease-in-out, fade-out 0.5s 2.5s ease-in-out;
+  to {
+    opacity: 0;
   }
-  
-  @keyframes slide-in {
-    from {
-      transform: translateY(100%);
-    }
-    to {
-      transform: translateY(0);
-    }
-  }
-  
-  @keyframes fade-out {
-    from {
-      opacity: 1;
-    }
-    to {
-      opacity: 0;
-    }
-  }
-  
+}
+
